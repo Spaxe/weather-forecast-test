@@ -9,7 +9,7 @@ const app = document.getElementById("root");
 if (app?.hasChildNodes()) {
   hydrate(
     <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename="/weather-forecast-test/">
         <Routes />
       </BrowserRouter>
     </React.StrictMode>,
@@ -18,7 +18,7 @@ if (app?.hasChildNodes()) {
 } else {
   render(
     <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename="/weather-forecast-test/">
         <Routes />
       </BrowserRouter>
     </React.StrictMode>,
